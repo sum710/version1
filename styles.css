@@ -115,7 +115,66 @@ section {
     transform: translateY(0);
   }
 }
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 2px solid #161512;
+}
 
+table th, table td {
+  padding: 10px;
+  border: 1px solid #141310;
+  text-align: left;
+}
+
+table th {
+  background-color: #1f1d19;
+  color: #fff;
+}
+
+table td {
+  background-color: #fff;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #15171a;
+  margin-bottom: 20px;
+}
+.street-food {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.food-card {
+  flex: 0 1 calc(25% - 2rem);
+  background-color:rgba(210, 126, 126, 0.829);
+  text-align:center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(46, 45, 45, 0.95);
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+        transform: translateY(-5px);
+      }
+
+.food-image {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+      }
+ .food-info {
+        padding: 1rem;
+      }
+
+.food-price {
+        font-weight: bold;
+        color: #f6ecec;
+      }
 /* Footer Styles */
 footer {
   background-color: #325171;
