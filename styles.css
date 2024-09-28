@@ -136,6 +136,20 @@ table th {
 table td {
   background-color: #fff;
 }
+@keyframes slideIn {
+0% {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+100%{
+  transform:translateX(0);
+  opacity: 1;
+}
+}
+
+table{
+animation: slideIn 1s ease;
+}
 .section-title {
   text-align: center;
   font-size: 2rem;
@@ -175,6 +189,81 @@ table td {
         font-weight: bold;
         color: #f6ecec;
       }
+@keyframes slideIn {
+      0% {
+          transform: translateX(-100%);
+          opacity: 0;
+      }
+      100%{
+          transform:translateX(0);
+          opacity: 1;
+      }
+  }
+  
+  .food-info, .food-card{
+      animation: slideIn 1s ease;
+  }
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #34495e;
+    animation: growAndColorChange 0.3s forwards;
+  }
+@keyframes growAndColorChange {
+0% {
+    transform: scale(1);
+    background-color: #3498db;
+    color: white;
+}
+100% {
+    transform: scale(1.1); 
+    background-color: #2ecc71; 
+    color: #fff;
+}
+}
 /* Footer Styles */
 footer {
   background-color: #325171;
