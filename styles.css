@@ -154,8 +154,9 @@ footer {
 .about {
   flex-direction: column;
 }
-
-
+img{
+  height:auto;
+  width:100%;
 
 }
 
